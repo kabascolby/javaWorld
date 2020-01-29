@@ -1,0 +1,13 @@
+{
+    "java.dependency.packagePresentation": "hierarchical",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "bin/app/exercises/**/*.jar"
+    ]
+}
