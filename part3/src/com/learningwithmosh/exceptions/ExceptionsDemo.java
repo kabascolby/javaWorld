@@ -8,15 +8,19 @@ import java.text.SimpleDateFormat;
 
 public class ExceptionsDemo {
 
-    public static void show() throws IOException {
+    public static void show() throws AccountException {
 
         var account = new Account();
-        try {
-            account.deposit(-8);
-        } catch (IOException e) {
-            // System.out.println(e.getMessage());
-           throw e;
-        }
+        account.deposit(10);
+
+        account.deposit(8);
+        account.widraw(30);
+        // try {
+
+        // } catch (IOException | InsufficientFundsException e) {
+        //     // System.out.println(e.getMessage());
+        //    throw e;
+        // }
        
         try(
             var reader = new FileReader("lamine.txt");

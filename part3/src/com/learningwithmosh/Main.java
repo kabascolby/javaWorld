@@ -3,17 +3,19 @@ package com.learningwithmosh;
 import java.io.IOException;
 
 import com.learningwithmosh.exceptions.ExceptionsDemo;
+import com.learningwithmosh.generics.ListDemo;
 
 public class Main {
     public static void main(String[] args) /* throws Exception */ {
-        try {
+        /* try {
             ExceptionsDemo.show();
-        } catch (IOException e) {
+        } catch (Throwable e) {
 
             System.out.println(e.getMessage());
             System.out.println("An unexpected error occurred.");
-            // TODO Auto-generated catch block
-            // e.printStackTrace();
-        }
+            e.printStackTrace();
+        } */
+
+        ListDemo.show();
     }
 }
